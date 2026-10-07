@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { DataGrid, GridColDef, GridRowSelectionModel } from '@mui/x-data-grid';
 import { 
-  Container, Typography, Paper, Alert, Button, Dialog, DialogTitle, 
+  Typography, Paper, Alert, Button, Dialog, DialogTitle, 
   DialogContent, DialogActions, TextField, MenuItem, Select, FormControl, 
   InputLabel, FormHelperText, Stack, Box, Chip, IconButton, Tooltip
 } from '@mui/material';
@@ -52,15 +52,6 @@ const DashboardAgent = () => {
     'FACTURATION': 'Facturation',
   };
 
-  const SLA_PAR_TYPE: Record<string, string> = {
-    'Mobile Money': '12h',
-    'FTTH': '24h',
-    'Internet': '24h',
-    'Technique': '24h',
-    'Facturation': '48h',
-    'Autre': '24h',
-  };
-
   const [agentDomaine, setAgentDomaine] = useState('');
   const [agentType, setAgentType] = useState('');
 
@@ -72,6 +63,7 @@ const DashboardAgent = () => {
       setAgentType(t);
       setNewReclamation(prev => ({ ...prev, typeReclamation: t }));
     }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const newReclamationInitial = {

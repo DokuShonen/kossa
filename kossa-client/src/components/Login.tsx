@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Paper, TextField, Button, Typography, Alert, Box } from '@mui/material';
+import { TextField, Button, Typography, Alert, Box } from '@mui/material';
 import PasswordInput from './PasswordInput';
 import api from '../services/api';
 

@@ -161,6 +161,7 @@ function App() {
         }
       }).catch(() => {});
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const handleAgenceChange = (agenceId: string) => {
