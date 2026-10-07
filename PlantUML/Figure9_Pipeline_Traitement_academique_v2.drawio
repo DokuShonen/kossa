@@ -1,0 +1,81 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram id="figure9-pipeline-v2" name="Figure 9 - Pipeline horizontal">
+    <mxGraphModel dx="1042" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;html=1;fillColor=#1F4E79;strokeColor=#163A5C;fontColor=#FFFFFF;fontFamily=Times New Roman;fontSize=12;" value="Début" vertex="1">
+          <mxGeometry height="60" width="60" x="25" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF2F8;strokeColor=#1F4E79;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="1&#xa;SAISIE&#xa;&#xa;Agent remplit le formulaire&#xa;(Client, MSISDN, type, objet)" vertex="1">
+          <mxGeometry height="180" width="165" x="110" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF4EE;strokeColor=#2F6B4F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="2&#xa;VALIDATION&#xa;&#xa;Contrôle du format MSISDN&#xa;et des règles métier" vertex="1">
+          <mxGeometry height="180" width="165" x="295" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFF6E8;strokeColor=#B7791F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="3&#xa;DOMAINE&#xa;&#xa;Détermination automatique&#xa;du domaine et calcul du SLA" vertex="1">
+          <mxGeometry height="180" width="165" x="480" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF2F8;strokeColor=#1F4E79;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="4&#xa;ÉQUIPE N1&#xa;&#xa;Affectation à l&#39;équipe&#xa;compétente du domaine" vertex="1">
+          <mxGeometry height="180" width="165" x="665" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF4EE;strokeColor=#2F6B4F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="5&#xa;SLA&#xa;&#xa;Surveillance toutes les 5 min&#xa;Escalade si dépassement" vertex="1">
+          <mxGeometry height="180" width="165" x="850" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFF6E8;strokeColor=#B7791F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="6&#xa;TRAITEMENT&#xa;&#xa;Résolution, régularisation,&#xa;dérogation ou escalade N2" vertex="1">
+          <mxGeometry height="180" width="165" x="1035" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF2F8;strokeColor=#1F4E79;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="7&#xa;HISTORIQUE&#xa;&#xa;Enregistrement de chaque action&#xa;(statut, date, utilisateur)" vertex="1">
+          <mxGeometry height="180" width="165" x="1220" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#EAF4EE;strokeColor=#2F6B4F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="8&#xa;CLÔTURE&#xa;&#xa;Validation du Chef d&#39;agence&#xa;et notification du client" vertex="1">
+          <mxGeometry height="180" width="165" x="1405" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="b9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFF6E8;strokeColor=#B7791F;strokeWidth=2;fontFamily=Times New Roman;fontSize=12;fontColor=#1F2937;align=center;verticalAlign=middle;" value="9&#xa;STATISTIQUES&#xa;&#xa;Agrégation, rapports&#xa;et export PDF / CSV" vertex="1">
+          <mxGeometry height="180" width="165" x="1590" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#C55A11;strokeColor=#8A3F0B;fontColor=#FFFFFF;fontFamily=Times New Roman;fontSize=12;" value="Fin" vertex="1">
+          <mxGeometry height="60" width="60" x="1840" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="a0" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="b1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="b2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" source="b7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" edge="1" parent="1" source="b8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#1F4E79;strokeWidth=2;" target="b9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" edge="1" parent="1" source="b9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#C55A11;strokeWidth=2;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1900" y="340" />
+              <mxPoint x="1900" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9CA3AF;fontFamily=Times New Roman;fontSize=12;fontColor=#374151;align=center;" value="Légende :  Bleu = saisie, affectation et traçabilité    Vert = validation, surveillance et clôture    Orange = détermination, traitement et statistiques" vertex="1">
+          <mxGeometry height="50" width="1300" x="170" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,15 @@
+{
+  "short_name": "Kossa",
+  "name": "Kossa",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#155E75",
+  "background_color": "#ffffff"
+}

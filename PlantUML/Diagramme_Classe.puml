@@ -1,0 +1,272 @@
+@startuml Diagramme_Classe_Kossa
+
+' --- OPTION DE STYLE KOSSA AFRICA ---
+skinparam shadowing true
+skinparam handwritten false
+skinparam classAttributeIconSize 0
+skinparam backgroundColor #FFFFFF
+
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #0060A8
+    ArrowColor #0060A8
+    HeaderBackgroundColor #0060A8
+    FontColor #0060A8
+    FontSize 12
+    FontName Arial
+}
+
+skinparam enum {
+    BackgroundColor #FFF8F0
+    BorderColor #F37A21
+    HeaderBackgroundColor #F37A21
+    FontColor #FFFFFF
+}
+
+skinparam abstract {
+    HeaderBackgroundColor #004070
+}
+
+' --- HÉRITAGE UTILISATEURS ---
+abstract class Utilisateur {
+    # Long id
+    # String nom
+    # String email
+    # String username
+    # String password
+    # String role
+    --
+    + getId() : Long
+    + getNom() : String
+    + getEmail() : String
+    + getRole() : String
+}
+
+class Admin extends Utilisateur {
+}
+
+class Agent extends Utilisateur {
+    - String matricule
+    --
+    + getMatricule() : String
+}
+
+class ChefAgence extends Utilisateur {
+    - String departement
+    - String region
+    --
+    + getDepartement() : String
+    + getRegion() : String
+}
+
+class Superviseur extends Utilisateur {
+    - String departement
+    --
+    + getDepartement() : String
+}
+
+' --- ENTITÉS ORGANISATIONNELLES & CLIENT ---
+class Agence {
+    - Long id
+    - String nom
+    - String ville
+    - String code
+    - String region
+}
+
+class EquipeSupport {
+    - Long id
+    - String nom
+    - String niveau
+    - String domaine
+    - String description
+}
+
+class Client {
+    - Long id
+    - String nom
+    - String prenom
+    - String msisdn
+    - String adresse
+}
+
+' --- ENTITÉ CENTRALE ---
+class Reclamation {
+    - Long id
+    - String reference
+    - String objet
+    - String description
+    - String type
+    - String canalNom
+    - String canalDescription
+    - Boolean canalActif
+    - Date dateCreation
+    - Date dateEcheance
+    - String statut
+    - String priorite
+    - String domaine
+    --
+    + determinerDomaine()
+    + validerPriorite()
+}
+
+' --- GESTION WORKFLOW & ESCALADE ---
+class Escalade {
+    - Long id
+    - String niveau
+    - String statut
+    - Date dateEscalade
+    - String motif
+}
+
+class TicketResolution {
+    - Long id
+    - String solution
+    - Date dateResolution
+    - String statutFinal
+}
+
+class PlanAction {
+    - Long id
+    - String description
+    - String domaine
+    - Date datePrevue
+    - Boolean effectue
+}
+
+' --- SUIVI & COMMUNICATION ---
+class Commentaire {
+    - Long id
+    - String contenu
+    - Date dateCreation
+    - String auteurNom
+}
+
+class PieceJointe {
+    - Long id
+    - String nomFichier
+    - String cheminFichier
+    - String typeMime
+    - Long taille
+}
+
+class Notification {
+    - Long id
+    - String message
+    - Date dateEnvoi
+    - Boolean lue
+}
+
+class HistoriqueTicket {
+    - Long id
+    - String action
+    - String ancienStatut
+    - String nouveauStatut
+    - Date dateAction
+    - String utilisateurNom
+}
+
+' --- RÉFÉRENTIEL ET SLA ---
+class Categorie {
+    - Long id
+    - String nom
+    - String description
+}
+
+class TypeReclamation {
+    - Long id
+    - String nom
+    - String code
+    - String description
+}
+
+class SLA {
+    - Long id
+    - Integer dureeHeures
+    - String description
+}
+
+' --- ENUMS ---
+enum Role {
+    ROLE_ADMIN
+    ROLE_CHEF_AGENCE
+    ROLE_CHARGE_RECLAMATION
+    ROLE_GESTIONNAIRE
+    ROLE_CHEF_SAV
+    ROLE_SUPERVISEUR
+}
+
+enum Domaine {
+    MOBILE_MONEY
+    FTTH
+    INTERNET
+    FACTURATION
+    TECHNIQUE
+}
+
+enum StatutReclamation {
+    OUVERT
+    ASSIGNE
+    EN_TRAITEMENT
+    EN_COURS
+    RESOLU
+    CLOTURE
+    REGULARISEE
+    VALIDATION_SUPERVISEUR
+    EN_ATTENTE_SUPERVISEUR
+    ESCALADE_N1
+    ESCALADE_N2
+}
+
+enum StatutEscalade {
+    DEMANDE
+    VALIDEE
+    REJETEE
+    EN_ATTENTE
+    EN_COURS
+    RESOLUE
+}
+
+enum NiveauEscalade {
+    NIVEAU_1
+    NIVEAU_2
+}
+
+enum Priorite {
+    FAIBLE
+    MOYENNE
+    CRITIQUE
+}
+
+' --- RELATIONS ---
+Utilisateur "*" --> "0..1" Agence : agence
+Agent "*" --> "0..1" EquipeSupport : equipeSupport
+Superviseur "*" --> "0..1" EquipeSupport : equipeSupervisee
+
+Reclamation "*" --> "1" Client : client
+Reclamation "*" --> "0..1" Agent : agent
+Reclamation "*" --> "0..1" ChefAgence : chefSisav
+Reclamation "*" --> "0..1" EquipeSupport : equipeSupport
+Reclamation "*" --> "0..1" Agence : agence
+Reclamation "*" --> "0..1" TypeReclamation : typeReclamation
+Reclamation "*" --> "0..1" Categorie : categorie
+
+Reclamation "1" *-- "*" PieceJointe : piecesJointes
+Reclamation "1" *-- "*" Commentaire : commentaires
+Reclamation "1" *-- "*" Escalade : escalades
+Reclamation "1" *-- "*" Notification : notifications
+Reclamation "1" *-- "*" TicketResolution : ticketsResolution
+Reclamation "1" *-- "0..1" PlanAction : planAction
+Reclamation "1" *-- "*" HistoriqueTicket : historiqueTickets
+
+Escalade "*" --> "0..1" ChefAgence : manager
+Escalade "*" --> "0..1" EquipeSupport : equipeSupport
+Escalade "*" --> "0..1" Agent : agent
+
+PlanAction "*" --> "0..1" Domaine : domaine
+
+Notification "*" --> "0..1" Utilisateur : destinataire
+TypeReclamation "*" --> "0..1" Categorie : categorie
+Categorie "*" --> "0..1" SLA : sla
+
+@enduml

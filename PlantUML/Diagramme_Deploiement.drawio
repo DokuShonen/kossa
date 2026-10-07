@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-08-26" agent="Claude" version="24.7.5">
+  <diagram id="deployDiag" name="Diagramme de déploiement - Kossa">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="d1" value="Poste Client / Navigateur Web" style="shape=cube;size=12;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=12;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="276" height="302" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2" value="&lt;&lt;artifact&gt;&gt;
+Single Page Application (SPA)" style="shape=note;size=16;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontStyle=1;verticalAlign=top;align=center;spacingTop=4;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="54" y="74" width="248" height="254" as="geometry"/>
+        </mxCell>
+        <mxCell id="d3" value="React 19 (TypeScript)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="68" y="108" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d4" value="Material UI (MUI Components)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="68" y="160" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d5" value="Axios API Client
+(JWT &amp; Header X-Agence-Id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="68" y="212" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="d6" value="Chart.js (Graphiques KPI)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="68" y="274" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d7" value="Serveur Ingress / Reverse Proxy
+(Optionnel)" style="shape=cube;size=12;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=12;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="402" width="268" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="d8" value="Nginx / HTTPS Gateway
+(TLS/SSL Termination)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="54" y="436" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="d9" value="Serveur d'Application (JVM Java 17)" style="shape=cube;size=12;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=12;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="416" y="40" width="1084" height="444" as="geometry"/>
+        </mxCell>
+        <mxCell id="d10" value="&lt;&lt;artifact&gt;&gt;
+Kossa Backend (Spring Boot 4 JAR)" style="shape=note;size=16;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontStyle=1;verticalAlign=top;align=center;spacingTop=4;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="74" width="1056" height="396" as="geometry"/>
+        </mxCell>
+        <mxCell id="d11" value="Layer Sécurité" style="shape=folder;fontStyle=1;spacingTop=8;tabWidth=90;tabHeight=18;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#EAF2FB;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="444" y="108" width="248" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="d12" value="Spring Security &amp; CORS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="458" y="142" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d13" value="JwtAuthenticationFilter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="458" y="194" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d14" value="Layer API Controllers" style="shape=folder;fontStyle=1;spacingTop=8;tabWidth=90;tabHeight=18;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#EAF2FB;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="704" y="108" width="248" height="348" as="geometry"/>
+        </mxCell>
+        <mxCell id="d15" value="AuthController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="142" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d16" value="ReclamationController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="194" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d17" value="ManagerController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="246" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d18" value="SuperviseurController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="298" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d19" value="AdminUserController &amp; Config" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="350" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d20" value="RapportExportController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="718" y="402" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d21" value="Layer Service (Business)" style="shape=folder;fontStyle=1;spacingTop=8;tabWidth=90;tabHeight=18;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#EAF2FB;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="964" y="108" width="248" height="296" as="geometry"/>
+        </mxCell>
+        <mxCell id="d22" value="ReclamationService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="978" y="142" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d23" value="NotificationService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="978" y="194" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d24" value="SlaMonitorService (@Scheduled)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="978" y="246" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d25" value="SmsService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="978" y="298" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d26" value="EmailService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="978" y="350" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d27" value="Layer Libs &amp; Frameworks" style="shape=folder;fontStyle=1;spacingTop=8;tabWidth=90;tabHeight=18;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#EAF2FB;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1224" y="108" width="248" height="192" as="geometry"/>
+        </mxCell>
+        <mxCell id="d28" value="Spring Data JPA / Hibernate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1238" y="142" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d29" value="OpenPDF (Génération PDF)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1238" y="194" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d30" value="Apache POI (Export Excel)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1238" y="246" width="220" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d31" value="Serveur Base de Données
+(PostgreSQL 17)" style="shape=cube;size=12;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=12;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="416" y="554" width="384" height="408" as="geometry"/>
+        </mxCell>
+        <mxCell id="d32" value="kossa_db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#EBF4FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="588" width="356" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="d33" value="Tables" style="shape=umlFrame;whiteSpace=wrap;html=1;width=60;height=30;fillColor=none;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontStyle=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="444" y="622" width="328" height="312" as="geometry"/>
+        </mxCell>
+        <mxCell id="d34" value="utilisateurs / agents / chefagences / superviseurs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="656" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d35" value="agences / equipes_support" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="702" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d36" value="reclamations / escalades / clients" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="748" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d37" value="notifications / commentaires / pieces_jointes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="794" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d38" value="categories / types_reclamation / sla" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="840" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d39" value="plans_action / historique_tickets" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0060A8;fontColor=#0060A8;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="458" y="886" width="300" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="d40" value="Serveur SMTP Kossa Africa" style="shape=cube;size=12;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=12;fontStyle=1;verticalAlign=top;align=center;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="900" y="554" width="248" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="d41" value="Service Email SMTP
+(Port 25 / 587)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="914" y="588" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="d42" value="HTTP/HTTPS (Port 80/443)" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=10;strokeColor=#0060A8;fontStyle=1;" edge="1" parent="1" source="d1" target="d8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d43" value="HTTP Proxy (Port 8080)" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=10;strokeColor=#0060A8;fontStyle=1;" edge="1" parent="1" source="d8" target="d9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d44" value="REST API Calls
+(JSON, Header X-Agence-Id)" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;dashed=1;endFill=0;" edge="1" parent="1" source="d5" target="d13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d45" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d13" target="d12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d46" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d47" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d48" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d49" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d50" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d19">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d51" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d12" target="d20">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d52" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d16" target="d22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d53" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d17" target="d22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d54" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d18" target="d22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d55" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d19" target="d22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d56" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d20" target="d29">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d57" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d20" target="d30">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d58" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d22" target="d28">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d59" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d23" target="d28">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d60" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d24" target="d22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d61" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d22" target="d23">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d62" value="" style="html=1;endArrow=block;endFill=1;fontColor=#0060A8;fontSize=9;strokeColor=#0060A8;" edge="1" parent="1" source="d23" target="d25">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d63" value="JDBC Connection Pool
+(HikariCP / Port 5432)" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=10;strokeColor=#0060A8;fontStyle=1;" edge="1" parent="1" source="d28" target="d32">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d64" value="Protocol SMTP
+(app.mail.enabled=true)" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=10;strokeColor=#0060A8;fontStyle=1;" edge="1" parent="1" source="d26" target="d41">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

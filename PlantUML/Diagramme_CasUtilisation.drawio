@@ -1,0 +1,255 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram id="ucDiag" name="Diagramme de cas d&#39;utilisation - Kossa">
+    <mxGraphModel dx="4993" dy="3929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Agent" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Chargé de Réclamation" vertex="1">
+          <mxGeometry height="70" width="40" x="-230" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ChefAgence" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Chef d&#39;Agence" vertex="1">
+          <mxGeometry height="70" width="40" x="1650" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="Superviseur" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Superviseur d&#39;Agence" vertex="1">
+          <mxGeometry height="70" width="40" x="-230" y="537" as="geometry" />
+        </mxCell>
+        <mxCell id="ChefSAV" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Chef SAV (SISAV)" vertex="1">
+          <mxGeometry height="70" width="40" x="1460" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Administrateur" vertex="1">
+          <mxGeometry height="70" width="40" x="1460" y="533" as="geometry" />
+        </mxCell>
+        <mxCell id="Gestionnaire" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=13;fontStyle=1;" value="Gestionnaire" vertex="1">
+          <mxGeometry height="70" width="40" x="1380" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="System" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#E8F0FE;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;fontStyle=2;" value="Système SLA&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="40" x="-230" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_CreateReclamation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Saisir réclamation (Point d&#39;entrée)" vertex="1">
+          <mxGeometry height="50" width="280" x="170" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ValiderMsisdn" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Valider MSISDN (+226 KOSSA)" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ViewAgentTickets" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Consulter réclamations attribuées" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ProcessTicket" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Traiter réclamation (Passer en cours)" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_AddComment" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Ajouter commentaire &amp;amp; pièce jointe" vertex="1">
+          <mxGeometry height="50" width="280" x="180" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_Regulariser" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Régulariser immédiatement N1" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ChefAgenceDashboard" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Consulter tableau de bord Chef d&#39;Agence" vertex="1">
+          <mxGeometry height="50" width="280" x="1050" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_AssignTicket" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Assigner ticket à un agent (Contrôle compétence)" vertex="1">
+          <mxGeometry height="50" width="280" x="810" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ReviewEscalation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Examiner demande escalade N2" vertex="1">
+          <mxGeometry height="50" width="280" x="820" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ApproveEscalation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Valider escalade N2 (Affecter Équipe N2)" vertex="1">
+          <mxGeometry height="50" width="280" x="940" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_RejectEscalation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Rejeter escalade N2 (Retour N1)" vertex="1">
+          <mxGeometry height="50" width="280" x="610" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ResolveTicket" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Renseigner résolution &amp;amp; clôturer ticket" vertex="1">
+          <mxGeometry height="50" width="280" x="810" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_TransmettreSISAV" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Transmettre au SISAV" vertex="1">
+          <mxGeometry height="50" width="280" x="780" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ExportReports" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Exporter rapports (PDF / CSV Excel)" vertex="1">
+          <mxGeometry height="50" width="280" x="750" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_RequestDerogation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Soumettre demande dérogation/remboursement" vertex="1">
+          <mxGeometry height="50" width="280" x="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_SupervisorView" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Consulter activité périmètre agence" vertex="1">
+          <mxGeometry height="50" width="280" x="100" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ChooseDomaine" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Choisir domaine de supervision" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ApproveDerogation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Valider dérogation (Passer RESOLU)" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_RejectDerogation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Rejeter dérogation (Passer EN_COURS)" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ImmediateEscalation" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Déclencher escalade immédiate N2" vertex="1">
+          <mxGeometry height="50" width="280" x="160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_Login" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Authentification JWT (Login)" vertex="1">
+          <mxGeometry height="50" width="280" x="520" y="420.00000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ManageUsers" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Gérer les utilisateurs (CRUD, Équipe, Agence)" vertex="1">
+          <mxGeometry height="50" width="280" x="880" y="537" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ManageRef" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Administrer le référentiel (Catégories, SLA, Types)" vertex="1">
+          <mxGeometry height="50" width="280" x="1060" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_FilterAgence" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Filtrer opérations par Agence (X-Agence-Id)" vertex="1">
+          <mxGeometry height="50" width="280" x="520" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_CheckSLA" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Vérifier dépassement SLA (Toutes les 5 min)" vertex="1">
+          <mxGeometry height="50" width="280" x="170" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_AutoEscalateN1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Déclencher escalade N1 automatique" vertex="1">
+          <mxGeometry height="50" width="280" x="-10" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_AutoEscalateN2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Déclencher escalade N2 automatique" vertex="1">
+          <mxGeometry height="50" width="280" x="360" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_SendNotification" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Notifier agent et manager" vertex="1">
+          <mxGeometry height="50" width="280" x="200" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_SendSMS" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Envoyer SMS au client" vertex="1">
+          <mxGeometry height="50" width="280" x="200" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_GestionnaireDashboard" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Consulter tableau de bord global" vertex="1">
+          <mxGeometry height="50" width="280" x="820" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="UC_ExportConsolide" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=13;" value="Exporter rapports consolidés" vertex="1">
+          <mxGeometry height="50" width="280" x="830" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="e1001" edge="1" parent="1" source="UC_CreateReclamation" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_ValiderMsisdn" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1002" edge="1" parent="1" source="UC_CreateReclamation" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_FilterAgence" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1003" edge="1" parent="1" source="UC_ApproveEscalation" style="html=1;endArrow=block;endFill=0;endSize=14;dashed=0;strokeColor=#0060A8;fontSize=13;" target="UC_ReviewEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1004" edge="1" parent="1" source="UC_RejectEscalation" style="html=1;endArrow=block;endFill=0;endSize=14;dashed=0;strokeColor=#0060A8;fontSize=13;" target="UC_ReviewEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1005" edge="1" parent="1" source="UC_RequestDerogation" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_ProcessTicket" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1006" edge="1" parent="1" source="UC_ManageUsers" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_FilterAgence" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1007" edge="1" parent="1" source="UC_CheckSLA" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_AutoEscalateN1" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1008" edge="1" parent="1" source="UC_CheckSLA" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_AutoEscalateN2" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1009" edge="1" parent="1" source="UC_AutoEscalateN1" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_SendNotification" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1010" edge="1" parent="1" source="UC_AutoEscalateN2" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_SendNotification" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1011" edge="1" parent="1" source="UC_SendNotification" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_SendSMS" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1012" edge="1" parent="1" source="UC_SupervisorView" style="html=1;endArrow=open;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;dashed=1;" target="UC_ChooseDomaine" value="&amp;lt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1013" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-190" y="184.00060847122026" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1014" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_CreateReclamation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1015" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ViewAgentTickets" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1016" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ProcessTicket" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1017" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_AddComment" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1018" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Regulariser" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1019" edge="1" parent="1" source="Agent" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_RequestDerogation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1020" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1021" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ChefAgenceDashboard" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1022" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_AssignTicket" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1023" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ReviewEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1024" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ApproveEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1025" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_RejectEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1026" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ResolveTicket" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1027" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_TransmettreSISAV" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1028" edge="1" parent="1" source="ChefAgence" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ExportReports" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1029" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1030" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_SupervisorView" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1031" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ChooseDomaine" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1032" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ApproveDerogation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1033" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_RejectDerogation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1034" edge="1" parent="1" source="Superviseur" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ImmediateEscalation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1035" edge="1" parent="1" source="ChefSAV" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1036" edge="1" parent="1" source="ChefSAV" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ChefAgenceDashboard" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1037" edge="1" parent="1" source="Admin" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1038" edge="1" parent="1" source="Admin" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ManageUsers" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1039" edge="1" parent="1" source="Admin" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ManageRef" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1040" edge="1" parent="1" source="Gestionnaire" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_Login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1041" edge="1" parent="1" source="Gestionnaire" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_GestionnaireDashboard" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1042" edge="1" parent="1" source="Gestionnaire" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_ExportConsolide" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1043" edge="1" parent="1" source="System" style="html=1;endArrow=none;fontColor=#0060A8;fontSize=13;strokeColor=#0060A8;" target="UC_CheckSLA" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

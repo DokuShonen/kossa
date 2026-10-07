@@ -1,0 +1,59 @@
+@startuml Diagramme_Sequence_Kossa
+
+autonumber
+skinparam shadowing true
+skinparam backgroundColor #FFFFFF
+
+actor "Agent Support" as Agent
+participant "React App\n(DashboardAgent)" as Frontend
+participant "JwtAuthenticationFilter" as AuthFilter
+participant "ReclamationController" as Controller
+participant "ReclamationService" as Service
+participant "NotificationService" as NotifService
+participant "SmsService" as SmsService
+database "PostgreSQL" as DB
+
+== 1. Création d'une réclamation & Affectation Automatique N1 ==
+Agent -> Frontend : Renseigne le formulaire (Client, MSISDN, Type, Objet)
+Frontend -> Frontend : Pré-validation frontend (MSISDN +226, 8 chiffres)
+Frontend -> AuthFilter : POST /api/reclamations\n[Header: Bearer JWT, X-Agence-Id]
+activate AuthFilter
+
+AuthFilter -> AuthFilter : Valider le token JWT & Rôle CHARGE_RECLAMATION
+AuthFilter -> Controller : Transmettre la requête authentifiée
+activate Controller
+
+Controller -> Service : creerReclamation(dto)
+activate Service
+
+Service -> Service : validerMsisdn(msisdn) [Regex +226/KOSSA]
+Service -> Service : determinerDomaine(type) [ex: FACTURATION, TECHNIQUE]
+Service -> Service : determinerSlaHeures(type, categorie)
+
+Service -> DB : findByNiveauAndDomaine("N1", domaine)
+DB --> Service : EquipeSupport N1
+
+Service -> DB : save(reclamation)\n[Statut: OUVERT, Equipe: N1]
+DB --> Service : Reclamation enregistrée (ID, Réf KOSSA-XXXX)
+
+Service -> NotifService : notifierNouvelleReclamation(reclamation)
+activate NotifService
+NotifService -> DB : save(notification)
+NotifService -> SmsService : envoyerSms(client.msisdn, message)
+activate SmsService
+SmsService -> SmsService : Log SMS : "Votre réclamation KOSSA-XXXX a été créée"
+SmsService --> NotifService : SMS envoyé (log)
+deactivate SmsService
+NotifService --> Service : Notification + SMS créés
+deactivate NotifService
+
+Service --> Controller : ReclamationDTO
+deactivate Service
+
+Controller --> Frontend : 201 Created (ReclamationDTO)
+deactivate Controller
+deactivate AuthFilter
+
+Frontend --> Agent : Message de confirmation avec référence KOSSA-XXXX
+
+@enduml

@@ -1,0 +1,424 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram id="diagramme_activite_plainte" name="Diagramme d&#39;Activite - Kossa">
+    <mxGraphModel dx="5165" dy="2103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2001" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0060A8;strokeColor=#0060A8;fontColor=#FFFFFF;fontSize=12;fontFamily=Arial;fontStyle=1;" value="Début" vertex="1">
+          <mxGeometry height="50" width="120" x="1270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n2002" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Le Client dépose une plainte (Agence / Téléphone)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n2003" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="L&#39;Agent de Support ouvre l&#39;interface de saisie (DashboardAgent)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n2004" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Saisie des informations (Client, MSISDN, Type, Objet, Description)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n2005" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="MSISDN valide (+226 / 8 chiffres KOSSA) ?" vertex="1">
+          <mxGeometry height="120" width="360" x="1150" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="n2006" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Afficher message d&#39;erreur MSISDN" vertex="1">
+          <mxGeometry height="90" width="340" x="680" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="n2007" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F37A21;strokeColor=#F37A21;fontColor=#FFFFFF;fontSize=12;fontFamily=Arial;fontStyle=1;" value="Fin" vertex="1">
+          <mxGeometry height="50" width="120" x="790" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="n2008" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Déterminer automatiquement le Domaine (determinerDomaine)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="n2009" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Calculer l&#39;échéance SLA (Mobile Money 12h, Facturation 48h, Autres 24h)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="n2010" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Affecter l&#39;Équipe Support Niveau 1 (N1) du Domaine" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="n2011" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Enregistrer la Réclamation (Statut: OUVERT, Réf: KOSSA-XXXX)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="n2012" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Générer Notification d&#39;ouverture" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="n2013" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Envoyer SMS de confirmation au Client" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="n2014" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Le Chef d&#39;agence consulte le tableau de bord" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="n2015" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Sélectionner la réclamation &amp; choisir un agent N1 du domaine" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="n2016" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Agent compétent dans le Domaine ?" vertex="1">
+          <mxGeometry height="120" width="360" x="1150" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="n2017" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Bloquer l&#39;assignation (Erreur de compétence)" vertex="1">
+          <mxGeometry height="90" width="340" x="670" y="1755" as="geometry" />
+        </mxCell>
+        <mxCell id="n2018" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F37A21;strokeColor=#F37A21;fontColor=#FFFFFF;fontSize=12;fontFamily=Arial;fontStyle=1;" value="Fin" vertex="1">
+          <mxGeometry height="50" width="120" x="780" y="1940" as="geometry" />
+        </mxCell>
+        <mxCell id="n2019" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Assigner le ticket à l&#39;Agent (Statut: ASSIGNE)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="n2020" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="L&#39;Agent N1 prend en charge la réclamation (Statut: EN_TRAITEMENT / EN_COURS)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="n2021" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0060A8;strokeColor=#0060A8;" value="" vertex="1">
+          <mxGeometry height="16" width="3070" x="40" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="n2022" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Analyse et investigation du problème" vertex="1">
+          <mxGeometry height="90" width="380" x="708" y="2260" as="geometry" />
+        </mxCell>
+        <mxCell id="n2023" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Nature du traitement ?" vertex="1">
+          <mxGeometry height="130" width="360" x="718" y="2410" as="geometry" />
+        </mxCell>
+        <mxCell id="n2024" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Appliquer la solution technique ou commerciale N1" vertex="1">
+          <mxGeometry height="90" width="340" x="-87" y="2647" as="geometry" />
+        </mxCell>
+        <mxCell id="n2025" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Renseigner le formulaire de résolution (TicketResolution)" vertex="1">
+          <mxGeometry height="100" width="340" x="-87" y="2777" as="geometry" />
+        </mxCell>
+        <mxCell id="n2026" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut RESOLU" vertex="1">
+          <mxGeometry height="90" width="340" x="-87" y="2917" as="geometry" />
+        </mxCell>
+        <mxCell id="n2027" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notifier le Client (SMS + notification)" vertex="1">
+          <mxGeometry height="90" width="340" x="-87" y="3047" as="geometry" />
+        </mxCell>
+        <mxCell id="n2028" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Procéder à la régularisation directe" vertex="1">
+          <mxGeometry height="90" width="340" x="315" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="n2029" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut REGULARISEE" vertex="1">
+          <mxGeometry height="90" width="340" x="315" y="2740" as="geometry" />
+        </mxCell>
+        <mxCell id="n2030" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notifier le Client (SMS + notification)" vertex="1">
+          <mxGeometry height="90" width="340" x="315" y="2870" as="geometry" />
+        </mxCell>
+        <mxCell id="n2031" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Soumettre la demande de validation au Superviseur" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="n2032" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer au statut EN_ATTENTE_SUPERVISEUR" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="2740" as="geometry" />
+        </mxCell>
+        <mxCell id="n2033" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Le Superviseur examine le dossier" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="2870" as="geometry" />
+        </mxCell>
+        <mxCell id="n2034" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Superviseur valide la dérogation ?" vertex="1">
+          <mxGeometry height="120" width="340" x="718" y="3000" as="geometry" />
+        </mxCell>
+        <mxCell id="n2035" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Accorder le geste commercial / remboursement" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="3170" as="geometry" />
+        </mxCell>
+        <mxCell id="n2036" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut RESOLU" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="3300" as="geometry" />
+        </mxCell>
+        <mxCell id="n2037" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notifier le Client (SMS + notification)" vertex="1">
+          <mxGeometry height="90" width="360" x="708" y="3430" as="geometry" />
+        </mxCell>
+        <mxCell id="n2038" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Rejeter la demande avec motif" vertex="1">
+          <mxGeometry height="90" width="340" x="1120" y="3098" as="geometry" />
+        </mxCell>
+        <mxCell id="n2039" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Retourner le ticket au statut EN_COURS" vertex="1">
+          <mxGeometry height="100" width="340" x="1120" y="3228" as="geometry" />
+        </mxCell>
+        <mxCell id="n2040" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Saisir le motif d&#39;escalade N2" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="2435" as="geometry" />
+        </mxCell>
+        <mxCell id="n2041" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut ESCALADE_N1" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="2565" as="geometry" />
+        </mxCell>
+        <mxCell id="n2042" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Le Chef d&#39;agence examine la demande d&#39;escalade" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="2695" as="geometry" />
+        </mxCell>
+        <mxCell id="n2043" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Chef d&#39;agence valide l&#39;escalade ?" vertex="1">
+          <mxGeometry height="120" width="340" x="1390" y="2825" as="geometry" />
+        </mxCell>
+        <mxCell id="n2044" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Transférer à l&#39;Équipe Support Niveau 2 (N2) du domaine" vertex="1">
+          <mxGeometry height="90" width="380" x="1518" y="3086" as="geometry" />
+        </mxCell>
+        <mxCell id="n2045" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut ESCALADE_N2" vertex="1">
+          <mxGeometry height="90" width="380" x="1518" y="3216" as="geometry" />
+        </mxCell>
+        <mxCell id="n2046" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="L&#39;Expert N2 traite le dossier et résout la plainte" vertex="1">
+          <mxGeometry height="100" width="380" x="1519" y="3430" as="geometry" />
+        </mxCell>
+        <mxCell id="n2047" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Passer la réclamation au statut RESOLU" vertex="1">
+          <mxGeometry height="90" width="380" x="1519" y="3570" as="geometry" />
+        </mxCell>
+        <mxCell id="n2048" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notifier le Client (SMS + notification)" vertex="1">
+          <mxGeometry height="90" width="380" x="1519" y="3700" as="geometry" />
+        </mxCell>
+        <mxCell id="n2049" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Rejeter l&#39;escalade avec motif" vertex="1">
+          <mxGeometry height="90" width="380" x="2079" y="3697" as="geometry" />
+        </mxCell>
+        <mxCell id="n2050" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Retourner la réclamation à l&#39;Agent N1 (Statut: EN_COURS)" vertex="1">
+          <mxGeometry height="110" width="380" x="2079" y="4014" as="geometry" />
+        </mxCell>
+        <mxCell id="n2051" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Ticket toujours en cours de traitement ?" vertex="1">
+          <mxGeometry height="130" width="360" x="1010" y="4010" as="geometry" />
+        </mxCell>
+        <mxCell id="n2052" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Réclamation non RÉSOLUE / CLÔTURÉE ?&lt;br&gt;(Active)" vertex="1">
+          <mxGeometry height="130" width="360" x="1961" y="2330" as="geometry" />
+        </mxCell>
+        <mxCell id="n2053" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Attendre 5 minutes (Timer SlaMonitorScheduler)" vertex="1">
+          <mxGeometry height="90" width="360" x="2451" y="2353" as="geometry" />
+        </mxCell>
+        <mxCell id="n2054" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Date courante &gt; Date Échéance SLA ?" vertex="1">
+          <mxGeometry height="130" width="360" x="2385" y="2582" as="geometry" />
+        </mxCell>
+        <mxCell id="n2055" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Aucune escalade en cours ?" vertex="1">
+          <mxGeometry height="130" width="360" x="2384" y="2790" as="geometry" />
+        </mxCell>
+        <mxCell id="n2056" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Générer automatiquement une Escalade N1 (Statut: ESCALADE_N1)" vertex="1">
+          <mxGeometry height="90" width="360" x="2440" y="3030" as="geometry" />
+        </mxCell>
+        <mxCell id="n2057" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notifier le Chef d&#39;agence et l&#39;Agent (Alerte Dépassement N1)" vertex="1">
+          <mxGeometry height="100" width="360" x="2440" y="3240" as="geometry" />
+        </mxCell>
+        <mxCell id="n2058" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#F37A21;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Escalade N1 déjà validée ?" vertex="1">
+          <mxGeometry height="130" width="360" x="2870" y="2894" as="geometry" />
+        </mxCell>
+        <mxCell id="n2059" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Générer automatiquement une Escalade N2 (Statut: ESCALADE_N2)" vertex="1">
+          <mxGeometry height="90" width="360" x="2870" y="3230" as="geometry" />
+        </mxCell>
+        <mxCell id="n2060" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Affecter l&#39;Équipe N2 &amp; Notifier l&#39;Équipe N2 (Alerte Dépassement N2)" vertex="1">
+          <mxGeometry height="110" width="360" x="2870" y="3500" as="geometry" />
+        </mxCell>
+        <mxCell id="n2061" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0060A8;strokeColor=#0060A8;" value="" vertex="1">
+          <mxGeometry height="16" width="2820" x="40" y="4251" as="geometry" />
+        </mxCell>
+        <mxCell id="n2062" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Clôture de la réclamation (Statut: CLOTURE)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="4351" as="geometry" />
+        </mxCell>
+        <mxCell id="n2063" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#0060A8;fontColor=#0060A8;fontSize=11;fontFamily=Arial;" value="Notification de clôture transmise au Client (SMS + notification)" vertex="1">
+          <mxGeometry height="90" width="380" x="1140" y="4481" as="geometry" />
+        </mxCell>
+        <mxCell id="n2064" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F37A21;strokeColor=#F37A21;fontColor=#FFFFFF;fontSize=12;fontFamily=Arial;fontStyle=1;" value="Fin" vertex="1">
+          <mxGeometry height="50" width="120" x="1270" y="4630" as="geometry" />
+        </mxCell>
+        <mxCell id="n2065" edge="1" parent="1" source="n2001" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2002" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2066" edge="1" parent="1" source="n2002" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2003" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2067" edge="1" parent="1" source="n2003" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2004" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2068" edge="1" parent="1" source="n2004" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2005" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2069" edge="1" parent="1" source="n2005" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2006" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2070" edge="1" parent="1" source="n2006" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2007" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2071" edge="1" parent="1" source="n2005" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2008" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2072" edge="1" parent="1" source="n2008" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2009" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2073" edge="1" parent="1" source="n2009" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2010" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2074" edge="1" parent="1" source="n2010" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2011" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2075" edge="1" parent="1" source="n2011" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2012" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2076" edge="1" parent="1" source="n2012" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2013" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2077" edge="1" parent="1" source="n2013" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2014" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2078" edge="1" parent="1" source="n2014" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2015" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2079" edge="1" parent="1" source="n2015" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2016" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2080" edge="1" parent="1" source="n2016" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2017" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2081" edge="1" parent="1" source="n2017" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2018" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2082" edge="1" parent="1" source="n2016" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2019" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2083" edge="1" parent="1" source="n2019" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2020" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2084" edge="1" parent="1" source="n2020" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2021" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2085" edge="1" parent="1" source="n2021" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2022" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2086" edge="1" parent="1" source="n2022" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2023" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2087" edge="1" parent="1" source="n2023" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2024" value="Résolution&lt;br&gt;Standard N1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2088" edge="1" parent="1" source="n2023" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2028" value="Régularisation&lt;br&gt;Immédiate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2089" edge="1" parent="1" source="n2023" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2031" value="Dérogation /&lt;br&gt;Remboursement">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2090" edge="1" parent="1" source="n2023" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2040" value="Problème complexe&lt;br&gt;N2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2091" edge="1" parent="1" source="n2024" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2025" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2092" edge="1" parent="1" source="n2025" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2026" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2093" edge="1" parent="1" source="n2026" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2027" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2094" edge="1" parent="1" source="n2028" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2029" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2095" edge="1" parent="1" source="n2029" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2030" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2096" edge="1" parent="1" source="n2031" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2032" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2097" edge="1" parent="1" source="n2032" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2033" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2098" edge="1" parent="1" source="n2033" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2034" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2099" edge="1" parent="1" source="n2034" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2035" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2100" edge="1" parent="1" source="n2035" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2036" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2101" edge="1" parent="1" source="n2036" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2037" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2102" edge="1" parent="1" source="n2034" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2038" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2103" edge="1" parent="1" source="n2038" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2039" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2104" edge="1" parent="1" source="n2040" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2041" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2105" edge="1" parent="1" source="n2041" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2042" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2106" edge="1" parent="1" source="n2042" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2043" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2107" edge="1" parent="1" source="n2043" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2044" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2108" edge="1" parent="1" source="n2044" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2045" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2109" edge="1" parent="1" source="n2045" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2046" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2110" edge="1" parent="1" source="n2046" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2047" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2111" edge="1" parent="1" source="n2047" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2048" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2112" edge="1" parent="1" source="n2043" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2049" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2113" edge="1" parent="1" source="n2049" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2050" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2114" edge="1" parent="1" source="n2039" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2051" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2115" edge="1" parent="1" source="n2050" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2051" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2116" edge="1" parent="1" source="n2051" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n2022" value="oui (relance)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2117" edge="1" parent="1" source="n2021" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2052" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2118" edge="1" parent="1" source="n2052" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2053" value="Active">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2119" edge="1" parent="1" source="n2053" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2054" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2120" edge="1" parent="1" source="n2054" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2055" value="Dépassement SLA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2121" edge="1" parent="1" source="n2054" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n2052" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2122" edge="1" parent="1" source="n2055" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2056" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2123" edge="1" parent="1" source="n2056" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2057" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2124" edge="1" parent="1" source="n2057" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n2052" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2125" edge="1" parent="1" source="n2055" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2058" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2126" edge="1" parent="1" source="n2058" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2059" value="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2127" edge="1" parent="1" source="n2059" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2060" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2128" edge="1" parent="1" source="n2060" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n2052" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2129" edge="1" parent="1" source="n2058" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n2052" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2130" edge="1" parent="1" source="n2027" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2131" edge="1" parent="1" source="n2030" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2132" edge="1" parent="1" source="n2037" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2133" edge="1" parent="1" source="n2048" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2134" edge="1" parent="1" source="n2051" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="non">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2135" edge="1" parent="1" source="n2052" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2061" value="non (Résolue/Clôturée)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2136" edge="1" parent="1" source="n2061" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2062" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2137" edge="1" parent="1" source="n2062" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2063" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2138" edge="1" parent="1" source="n2063" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#0060A8;fontColor=#0060A8;fontSize=10;fontFamily=Arial;jettySize=auto;" target="n2064" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
